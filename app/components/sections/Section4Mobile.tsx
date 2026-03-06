@@ -7,73 +7,71 @@ import Reveal from "../motion/Reveal";
 const cards = [
   {
     id: "save-time",
-    title: "Save over 20 hours",
-    subline: "of admin time per month per lawyer",
-    icon: "/assets/20-hours.svg",
+    title: "Standardise Supplier\nPerformance Data",
+    subline: "Turn inconsistent spreadsheets\ninto structured intelligence",
+    icon: "/assets/standardise-supplier.svg",
     description: [
-      "Conveyancers currently spend up to 20% of their fee-earning time completing Client & Matter Risk Assessments, with most standard purchase transactions alone taking over two hours to gather information, process and complete the CMRA.",
-      "By automating document analysis, data extraction and evidence-grounded CMRA drafting, Corepliance returns upwards of 20 hours per month to each lawyer, allowing that time to be redirected towards progressing matters, increasing caseload capacity, or improving client communication and relationships.",
+      "Today, supplier governance typically begins with exported spreadsheets. Each supplier system produces data in its own format, with its own definitions and layouts. Insurer contacts then spend valuable time mapping columns to SLA parameters, reconciling definitions, and determining which thresholds were met.",
+      "Stratus removes the need for interpretation.",
+      "Insurers upload the agreed SLA framework for each supplier relationship. Suppliers upload their standard raw data exports. Stratus configures an intelligence layer that aligns supplier data directly to SLA requirements. Performance metrics are structured, consistent, and transparent.",
+      "The discussion shifts from “What does this column mean?” to “Why did performance change?”",
     ],
   },
   {
     id: "reduce-delays",
-    title: "Reduce delays",
-    subline: "before legal work can begin",
-    icon: "/assets/reduce-delays.svg",
+    title: "Replace Reactive Audits with Continuous Oversight",
+    subline: "Move from periodic review\nto structured cadence",
+    icon: "/assets/replace-reactive.svg",
     description: [
-      "Under SRA guidance, no substantive legal work can commence until the CMRA has been completed and signed off, meaning AML delays directly stall transactions.",
-      "Corepliance dramatically shortens the time required to complete and approve CMRAs, enabling lawyers to begin legal work far earlier in the lifecycle of a matter and reducing one of the key contributors to increased conveyancing timelines.",
+      "Most supplier oversight today is retrospective. Performance is reviewed monthly or quarterly, often after customer impact has already occurred.",
+      "Stratus introduces structured cadence. Evidence is requested on defined intervals. Structural validation checks completeness and coherence automatically. Drift indicators highlight changes early, not months later.",
+      "Human accountability remains central. Stratus strengthens oversight by making signals visible sooner, giving both insurer and supplier time to act before minor deviations escalate.",
     ],
   },
   {
     id: "consistency",
-    title: "Improve consistency",
-    subline: "across fee earners",
-    icon: "/assets/improve.svg",
+    title: "Create a Shared\nIntelligence Layer",
+    subline: "Same data. Different perspectives.\nAligned outcomes.",
+    icon: "/assets/shared-intelligence.svg",
     description: [
-      "In the current environment, CMRAs are completed inconsistently across firms due to differing levels of experience, training and interpretation of regulatory guidance.",
-      "Corepliance applies a consistent, evidence-based reasoning framework to every matter, ensuring that AML assessments are approached in a standardised manner across all fee earners while still preserving final lawyer review and judgment.",
+      "Insurers and suppliers frequently operate from different interpretations of the same performance data. This creates friction and, over time, defensive reporting behaviours.",
+      "Stratus creates a shared intelligence environment. Both parties operate from the same structured dataset, mapped explicitly to contractual SLA parameters.",
+      "Insurers see performance against agreed standards, drift indicators, and review logs. Suppliers see exactly what is being measured, where performance is strong, and where improvement is required.",
+      "Ambiguity is removed. Governance becomes collaborative rather than corrective.",
     ],
   },
   {
     id: "risk",
-    title: "Lower regulatory risk",
-    subline: "and improve audit defensibility",
-    icon: "/assets/lower.svg",
+    title: "Interrogate Performance,\nNot Just Review It",
+    subline: "Ask better questions\nof your supply chain",
+    icon: "/assets/interrogate-performance.svg",
     description: [
-      "Regulatory scrutiny has intensified, with significant fines issued for AML failures and increasing expectations around documented reasoning.",
-      "Corepliance produces structured, auditable CMRAs with clear links between evidence, analysis and conclusions, supported by a comprehensive audit trail.",
-      "This strengthens a firm's ability to defend its compliance decisions during SRA audits or internal reviews and reduces the risk of issues falling through the cracks.",
+      "Headline KPIs rarely tell the full story. Stratus enables deeper interrogation of performance data.",
+      "Users can explore specific dimensions of performance — such as how vulnerable customers are handled, how certain demographic groups experience service, or how performance shifts when claims complexity increases.",
+      "The Stratus AI Assistant does not make decisions. It surfaces patterns, highlights anomalies, and enables structured questioning of the data. Outliers are preserved, not removed. Poor performance cannot be filtered out of view.",
+      "This supports informed, evidence-based improvement conversations across the supply chain.",
     ],
   },
   {
     id: "client-experience",
-    title: "Improve client experience",
-    subline: "at the very start of the transaction",
-    icon: "/assets/improve2.svg",
+    title: "Gain Portfolio-Level Visibility\nAcross Suppliers",
+    subline: "See the network,\nnot just the node",
+    icon: "/assets/portfolio-visibility.svg",
     description: [
-      "AML onboarding is frequently cited as a source of early friction between lawyers and clients, particularly when large volumes of financial information are requested without clear explanation.",
-      "By removing this burden from fee earners and accelerating CMRA completion, Corepliance allows the lawyer-client relationship to begin from a position of progress rather than delay, improving early engagement and overall client satisfaction.",
+      "As additional suppliers operate within Stratus, insurers gain consistent macro-level visibility across their supply chain.",
+      "Performance can be viewed through a unified framework. Drift patterns can be identified across providers. Improvement trends can be tracked consistently. Supplier performance becomes comparable within structured parameters.",
+      "This enables more confident governance decisions at portfolio level.",
     ],
   },
   {
     id: "stress",
-    title: "Remove Stress",
-    subline: "from one of the most cited sources of tension for lawyers",
-    icon: "/assets/stress.svg",
+    title: "Enable Performance-Led\nSupply Chain Expansion",
+    subline: "Strengthen partnerships\nthrough structured evidence",
+    icon: "/assets/expansion.svg",
     description: [
-      "AML compliance is widely regarded by conveyancers as one of the most stressful and least rewarding aspects of their role, contributing to burnout and attrition within the profession.",
-      "By taking away the most time-consuming and pressure-laden administrative work, Corepliance enables lawyers to focus on the legal work they are trained for and enjoy, significantly improving job satisfaction, retention and recruitment.",
-    ],
-  },
-  {
-    id: "costs",
-    title: "Cost covered",
-    subline: "through existing AML or ID administration charges",
-    icon: "/assets/costs.svg",
-    description: [
-      "Many law firms already charge clients an AML or ID administration fee, typically ranging from £25 to £50 plus VAT per client.",
-      "Corepliance's per-use pricing is designed to sit comfortably within this existing charging structure, meaning firms can adopt the platform without reducing profitability, as the cost can be fully recovered through standard client disbursements.",
+      "Structured performance data creates long-term strategic value.",
+      "Insurers can identify high-performing suppliers capable of supporting additional volume or filling network gaps. Suppliers can demonstrate structured, SLA-aligned performance credentials when engaging with new insurer partners.",
+      "Stratus does not act as a broker or marketplace. It does not re-route work. It provides the performance transparency that enables stronger, evidence-based supply relationships to form organically over time.",
     ],
   },
 ];
@@ -89,9 +87,14 @@ export default function Section4Mobile() {
     <section className="w-full bg-white">
       <div className="mx-auto max-w-[420px] space-y-6 px-6 py-10">
         <Reveal delay={0}>
-          <h2 className="text-2xl font-semibold text-[#3073AF]">
-            Why are law firms interested?
+          <h2 className="text-2xl font-semibold text-[#1867D4]">
+            How Stratus Transforms Supplier Oversight
           </h2>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="text-lg font-normal text-[#448CF0] font-[Inter]">
+            Turn inconsistent spreadsheets into structured intelligence
+          </div>
         </Reveal>
 
         <Reveal delay={0.25}>
@@ -104,15 +107,19 @@ export default function Section4Mobile() {
                   <button
                     type="button"
                     onClick={() => toggleCard(card.id)}
-                    className={`w-full rounded-[20px] bg-[#3073AF] px-5 py-4 text-left ${isOpen ? "rounded-b-none" : ""}`}
+                    className={`w-full rounded-[20px] bg-[#448CF0] px-5 py-4 text-left ${isOpen ? "rounded-b-none" : ""}`}
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
                         <div className="text-xl font-medium text-white">
-                          {card.title}
+                          {card.title.split("\n").map((line) => (
+                            <div key={line}>{line}</div>
+                          ))}
                         </div>
                         <div className="mt-2 text-base font-normal text-white">
-                          {card.subline}
+                          {card.subline.split("\n").map((line) => (
+                            <div key={line}>{line}</div>
+                          ))}
                         </div>
                       </div>
                       <div className="flex h-[72px] w-[72px] items-center justify-center">

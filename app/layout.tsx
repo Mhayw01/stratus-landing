@@ -8,35 +8,38 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://corepliance.co.uk"),
-  title: "Corepliance",
-  description: "The AML compliance platform for conveyancing lawyers.",
+  metadataBase: new URL("https://stratus-solutions.co.uk"),
+  title: "Stratus Intelligence Procurement",
+  description:
+    "Shared Intelligence for Insurance Supply Networks. Structured oversight. Clear performance visibility. Stronger supplier partnerships.",
   openGraph: {
-    title: "Corepliance",
-    description: "The AML compliance platform for conveyancing lawyers.",
-    url: "https://corepliance.co.uk",
-    siteName: "Corepliance",
+    title: "Stratus Intelligence Procurement",
+    description:
+      "Shared Intelligence for Insurance Supply Networks. Structured oversight. Clear performance visibility. Stronger supplier partnerships.",
+    url: "https://stratus-solutions.co.uk",
+    siteName: "Stratus Intelligence Procurement",
     images: [
       {
-        url: "/assets/meta.png",
+        url: "/stratus-meta.png",
         width: 1200,
         height: 630,
-        alt: "Corepliance — The AML compliance platform for conveyancing lawyers",
+        alt: "Stratus Intelligence Procurement — Shared Intelligence for Insurance Supply Networks",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Corepliance",
-    description: "The AML compliance platform for conveyancing lawyers.",
-    images: ["/assets/meta.png"],
+    title: "Stratus Intelligence Procurement",
+    description:
+      "Shared Intelligence for Insurance Supply Networks. Structured oversight. Clear performance visibility. Stronger supplier partnerships.",
+    images: ["/stratus-meta.png"],
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/stratus-cloud-favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
     apple: "/apple-touch-icon.png",
   },
@@ -50,21 +53,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://corepliance.co.uk" />
-        <meta property="og:title" content="Corepliance" />
+        <link rel="canonical" href="https://stratus-solutions.co.uk" />
+        <meta property="og:title" content="Stratus Intelligence Procurement" />
         <meta
           property="og:description"
-          content="The AML compliance platform for conveyancing lawyers."
+          content="Shared Intelligence for Insurance Supply Networks. Structured oversight. Clear performance visibility. Stronger supplier partnerships."
         />
-        <meta property="og:image" content="https://corepliance.co.uk/assets/meta.png" />
-        <meta property="og:url" content="https://corepliance.co.uk" />
+        <meta property="og:image" content="https://stratus-solutions.co.uk/stratus-meta.png" />
+        <meta property="og:url" content="https://stratus-solutions.co.uk" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Corepliance" />
+        <meta name="twitter:title" content="Stratus Intelligence Procurement" />
         <meta
           name="twitter:description"
-          content="The AML compliance platform for conveyancing lawyers."
+          content="Shared Intelligence for Insurance Supply Networks. Structured oversight. Clear performance visibility. Stronger supplier partnerships."
         />
-        <meta name="twitter:image" content="https://corepliance.co.uk/assets/meta.png" />
+        <meta name="twitter:image" content="https://stratus-solutions.co.uk/stratus-meta.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

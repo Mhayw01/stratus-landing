@@ -1,100 +1,75 @@
 "use client";
 
-import Image from "next/image";
 import Reveal from "../motion/Reveal";
 
-const bulletItems = [
+const steps = [
   {
-    id: "live",
-    icon: "/assets/live.svg",
-    text: (
-      <>
-        Use Corepliance
-        <br />
-        on live matters
-      </>
-    ),
+    id: 1,
+    text: "The insurer defines the SLA framework and reporting expectations.",
   },
   {
-    id: "shape",
-    icon: "/assets/shape.svg",
-    text: (
-      <>
-        Shape product development
-        <br />
-        and workflows
-      </>
-    ),
+    id: 2,
+    text: "The supplier uploads raw operational data on a defined cadence.",
   },
   {
-    id: "receive",
-    icon: "/assets/receive.svg",
-    text: (
-      <>
-        Receive priority onboarding
-        <br />
-        and support
-      </>
-    ),
+    id: 3,
+    text: "Stratus maps and validates data against the agreed SLA parameters.",
   },
   {
-    id: "influence",
-    icon: "/assets/influence.svg",
-    text: (
-      <>
-        Influence the future
-        <br />
-        direction of the platform
-      </>
-    ),
+    id: 4,
+    text: "Both parties review structured dashboards and act on early signals.",
   },
 ];
 
 export default function Section5Mobile() {
   return (
-    <section className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-l from-blue-500 to-cyan-700" />
-      <Image
-        src="/assets/section-5-back.svg"
-        alt=""
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="relative z-10 mx-auto max-w-[420px] px-6 pt-10 pb-12 text-center text-white">
+    <section className="w-full bg-white">
+      <div className="mx-auto max-w-[420px] px-6 py-12 text-center">
         <Reveal delay={0}>
-          <div className="text-2xl font-normal">Join the beta programme</div>
+          <div className="text-3xl font-bold text-[#1867D4] font-[Inter]">
+            HOW STRATUS WORKS
+          </div>
+        </Reveal>
+        <Reveal delay={0.15}>
+          <div className="mt-3 text-xl font-normal text-[#448CF0] font-[Inter]">
+            A Structured Oversight Workflow
+          </div>
         </Reveal>
 
-        <Reveal delay={0.25}>
-          <p className="mt-4 text-base font-normal leading-6">
-            We are currently onboarding a small number of conveyancing firms to
-            participate in our beta testing programme.
-            <br />
-            <span className="mt-6 block font-semibold text-white">
-              Beta firms will:
-            </span>
-          </p>
-        </Reveal>
-
-        <Reveal delay={0.55}>
-          <div className="mx-auto mt-4 max-w-[360px] space-y-6">
-            {bulletItems.map((item) => (
-              <div key={item.id} className="flex items-start gap-4 text-left">
-                <div className="relative h-10 w-10 shrink-0">
-                  <Image
-                    src={item.icon}
-                    alt=""
-                    fill
-                    className="object-contain"
-                  />
+        <Reveal delay={0.3}>
+          <div className="mx-auto mt-8 space-y-5 text-left text-base font-normal leading-7 text-stone-600 font-[Inter]">
+            {steps.map((step) => (
+              <div key={step.id} className="flex items-start gap-4">
+                <div className="mt-[4px] flex h-7 w-7 shrink-0 items-center justify-center rounded-md border-2 border-[#1867D4] text-xs font-semibold text-[#1867D4]">
+                  {step.id}
                 </div>
-                <div className="text-lg font-normal leading-tight text-white">
-                  {item.text}
-                </div>
+                <div>{step.text}</div>
               </div>
             ))}
           </div>
+        </Reveal>
+
+        <Reveal delay={0.45}>
+          <div className="mx-auto mt-8 max-w-[320px] text-center text-base font-normal leading-7 text-stone-500 font-[Inter]">
+            No disruption to existing claims platforms.
+            <br />
+            No automated decisions.
+            <br />
+            No opaque scoring models.
+            <br />
+            <br />
+            Just structured oversight.
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.6}>
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("open-contact"))}
+            className="mt-8 inline-flex h-12 w-64 items-center justify-center rounded-full bg-[#1867D4] text-lg font-medium text-white"
+          >
+            Contact us
+          </button>
         </Reveal>
       </div>
     </section>

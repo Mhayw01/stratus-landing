@@ -125,10 +125,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <div className="space-y-6">
             <div className="space-y-2">
               <h2 className="text-2xl font-semibold text-slate-900">
-                Contact Corepliance
+                Contact Stratus
               </h2>
               <p className="text-sm text-slate-600">
-                Tell us a little about your firm and we'll follow up.
+                Tell us a little about your company and we'll follow up.
               </p>
             </div>
 
@@ -167,7 +167,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </div>
 
               <label className="space-y-2 text-sm font-medium text-slate-700">
-                Law firm
+                Company
                 <input
                   name="lawFirm"
                   required
@@ -200,7 +200,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
               <button
                 type="submit"
-                className="w-full rounded-[20px] bg-[#3073AF] px-6 py-3 text-lg font-medium text-white"
+                className="w-full rounded-[20px] bg-[#1867D4] px-6 py-3 text-lg font-medium text-white"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send message"}

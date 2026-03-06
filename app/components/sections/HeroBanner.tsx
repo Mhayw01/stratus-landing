@@ -12,10 +12,10 @@ export default function HeroBanner() {
   };
 
   return (
-    <section className="relative h-[82vh] w-full overflow-hidden">
+    <section className="relative min-h-[82vh] w-full overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/assets/banner-image.svg"
+          src="/assets/stratus-hero.svg"
           alt=""
           fill
           priority
@@ -33,67 +33,62 @@ export default function HeroBanner() {
           className="object-cover"
         />
       </div>
-      <div className="relative z-20 h-full">
+      <div className="relative z-20 min-h-[82vh]">
         <motion.div
-            className="absolute left-[72px] top-[48px] h-[190px] w-[190px] overflow-hidden rounded-[50px]"
+          className="absolute left-[72px] top-[48px]"
           initial={{ opacity: 0, y: resolvedY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...baseTransition, delay: 0 }}
         >
           <Image
-            src="/assets/logo.svg"
-            alt="Corepliance logo"
-              width={180}
-              height={180}
+            src="/assets/stratus-logo.svg"
+            alt="Stratus logo"
+            width={319}
+            height={150}
             priority
           />
         </motion.div>
-        <div className="flex h-full items-start">
+        <div className="flex min-h-[82vh] items-start">
           <div className="flex w-full items-start justify-between px-[72px] pt-[270px] font-[Inter]">
-            <div className="flex max-w-[560px] flex-col gap-6 text-white">
+            <div className="flex max-w-[560px] flex-col gap-12 text-white">
               <motion.h1
-                className="text-3xl font-semibold"
+                className="text-4xl font-semibold"
                 initial={{ opacity: 0, y: resolvedY }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...baseTransition, delay: 0.5 }}
               >
-                The AML compliance
+                Shared Intelligence for
                 <br />
-                platform for
-                <br />
-                conveyancing lawyers
+                Insurance Supply Networks
               </motion.h1>
-              <motion.p
-                className="text-3xl font-semibold"
-                initial={{ opacity: 0, y: resolvedY }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ...baseTransition, delay: 1.0 }}
-              >
-                Now inviting solicitors
-                <br />
-                to join our
-                <br />
-                beta testing programme
-              </motion.p>
-              <motion.p
-                className="text-3xl font-semibold"
-                initial={{ opacity: 0, y: resolvedY }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ...baseTransition, delay: 1.5 }}
-              >
-                Launching soon
-              </motion.p>
+              <div className="text-[32px] font-semibold leading-[3.6rem]">
+                {[
+                  "Structured oversight",
+                  "Clear performance visibility",
+                  "Stronger supplier partnerships",
+                ].map((line, index) => (
+                  <motion.span
+                    key={line}
+                    className="block"
+                    initial={{ opacity: 0, y: resolvedY }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ ...baseTransition, delay: 1.0 + index * 0.3 }}
+                  >
+                    {line}
+                  </motion.span>
+                ))}
+              </div>
             </div>
-            <div className="flex self-end">
+            <div className="flex self-end mt-12">
               <motion.button
                 type="button"
                 onClick={() => window.dispatchEvent(new Event("open-contact"))}
-                className="relative z-30 flex h-[80px] w-[490px] cursor-pointer items-center justify-center rounded-[20px] bg-[#5F66CA] text-3xl font-medium text-white"
+                className="relative z-30 flex h-[80px] w-[490px] cursor-pointer items-center justify-center rounded-full bg-white text-3xl font-medium text-[#1867D4]"
                 initial={{ opacity: 0, y: resolvedY }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ ...baseTransition, delay: 2.0 }}
+                transition={{ ...baseTransition, delay: 1.9 }}
               >
-                Contact us to find out more
+                Get Early Access
               </motion.button>
             </div>
           </div>

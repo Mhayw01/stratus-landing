@@ -2,48 +2,59 @@
 
 import Reveal from "../motion/Reveal";
 
+const benefits = [
+  "Early access to the platform",
+  "Direct input into development priorities",
+  "Structured visibility into supplier performance",
+  "Priority consideration for future sector expansion",
+];
+
 export default function Section6Mobile() {
   return (
-    <section className="w-full bg-white h-[588px]">
-      <div className="mx-auto w-full max-w-[420px] px-6 py-10 text-center">
+    <section className="w-full bg-gradient-to-r from-[#3E6FA4] to-[#6FA8DC]">
+      <div className="mx-auto w-full max-w-[420px] px-6 py-12 text-center text-white">
         <Reveal delay={0}>
-          <h2 className="text-left text-2xl font-normal text-[#7D6A6A]">
-            Interested in taking part?
-          </h2>
+          <div className="text-3xl font-bold font-[Inter]">
+            EARLY ACCESS PROGRAMME
+          </div>
         </Reveal>
-
-        <Reveal delay={0.25}>
-          <p className="mt-4 text-left text-lg font-normal text-[#7D6A6A] leading-7">
-            If you are a conveyancing solicitor or law firm interested in:
-          </p>
+        <Reveal delay={0.15}>
+          <div className="mt-3 text-lg font-normal font-[Inter]">
+            Join the Stratus EA Programme
+          </div>
         </Reveal>
-
-        <Reveal delay={0.55}>
-          <ul className="mx-auto mt-8 max-w-[320px] list-disc pl-6 text-left text-lg text-[#7D6A6A] leading-7">
-            <li>Reducing the AML burden on your team</li>
-            <li>Improving consistency and compliance</li>
-            <li>Helping shape a new AML compliance platform</li>
+        <Reveal delay={0.3}>
+          <div className="mx-auto mt-5 text-base font-normal leading-7 font-[Inter]">
+            Stratus is launching in a focused, single-sector EA
+            <br />
+            to ensure clarity, correctness, and real operational impact.
+          </div>
+        </Reveal>
+        <Reveal delay={0.45}>
+          <div className="mt-5 text-base font-normal font-[Inter]">
+            EA participants receive:
+          </div>
+        </Reveal>
+        <Reveal delay={0.6}>
+          <ul className="mx-auto mt-3 max-w-[320px] list-disc pl-6 text-left text-base font-normal leading-7 font-[Inter]">
+            {benefits.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </Reveal>
-
-        <Reveal delay={0.85}>
-          <p className="mt-8 text-center text-lg font-normal text-[#7D6A6A] leading-7">
-            We’d love to speak with you.
-            <br />
-            Get in touch to discuss beta access.
-          </p>
-        </Reveal>
-
-        <Reveal delay={1.15}>
-          <div className="mt-10 flex justify-center">
-            <button
-              type="button"
-              onClick={() => window.dispatchEvent(new Event("open-contact"))}
-              className="inline-flex items-center justify-center rounded-full bg-[#3073AF] px-8 py-4 text-lg font-semibold leading-snug text-white shadow-sm transition-opacity hover:opacity-90 whitespace-nowrap"
-            >
-              Contact us to find out more
-            </button>
+        <Reveal delay={0.75}>
+          <div className="mt-5 text-base font-normal font-[Inter]">
+            Participation is limited to selected insurers and suppliers
           </div>
+        </Reveal>
+        <Reveal delay={0.9}>
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("open-contact"))}
+            className="mt-8 inline-flex h-12 w-64 items-center justify-center rounded-full bg-[#2F557F] text-lg font-medium text-white"
+          >
+            GET EARLY ACCESS
+          </button>
         </Reveal>
       </div>
     </section>

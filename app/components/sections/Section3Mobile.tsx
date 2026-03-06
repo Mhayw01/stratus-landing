@@ -6,52 +6,52 @@ import Reveal from "../motion/Reveal";
 const features = [
   {
     id: "evidence",
-    title: "Evidence-led Compliance",
+    title: "Structured SLA Mapping",
     description:
-      "Evidence-based CMRA drafting aligned to UK regulatory expectations",
-    icon: "/assets/evidence-led.svg",
+      "Supplier operational data aligned directly to insurer-defined SLA frameworks",
+    icon: "/assets/structured-sla-mapping.svg",
   },
   {
     id: "identity",
-    title: "Identity & Verification",
+    title: "Continuous Evidence Cadence",
     description:
-      "Electronic ID checking and secure ID & Source of Funds validation, including gifted deposits",
-    icon: "/assets/identity.svg",
+      "Defined upload cycles that support ongoing oversight rather than periodic audit",
+    icon: "/assets/continuos-evidence-cadence.svg",
   },
   {
     id: "matter",
-    title: "Matter Coverage",
+    title: "Performance Drift Detection",
     description:
-      "Purchase, sale, sale & purchase, and remortgage matters supported",
-    icon: "/assets/matter.svg",
+      "Early identification of deviation across key parameters before issues escalate",
+    icon: "/assets/performance-drift-protection.svg",
   },
   {
     id: "ai",
-    title: "AI Assistance",
+    title: "Shared Intelligence Dashboards",
     description:
-      "AI-assisted extraction of key financial data to support faster review",
-    icon: "/assets/ai.svg",
+      "Aligned insurer and supplier views built on the same structured dataset",
+    icon: "/assets/shared-intelligence-dashboards.svg",
   },
   {
     id: "lawyer",
-    title: "Lawyer Control",
+    title: "Governance & Action Logging",
     description:
-      "Full lawyer review, control and approval before any decision is finalised",
-    icon: "/assets/lawyer.svg",
+      "Documented review processes that evidence continuous oversight",
+    icon: "/assets/governance-and-action-logging.svg",
   },
   {
     id: "audit",
-    title: "Audit & Oversight",
+    title: "AI-Assisted Data Interrogation",
     description:
-      "Clear audit trails for internal review and regulatory scrutiny",
-    icon: "/assets/audit.svg",
+      "Structured querying of supplier data to surface patterns, anomalies, and emerging risk signals",
+    icon: "/assets/AI-Assisted-data-interrogation.svg",
   },
   {
     id: "data",
-    title: "Data security",
+    title: "Portfolio-Level Visibility",
     description:
-      "UK-hosted, encrypted data, automatically deleted after 60 days",
-    icon: "/assets/data.svg",
+      "Consistent cross-supplier performance insight within a unified governance framework",
+    icon: "/assets/portfolio-level-visibility.svg",
   },
 ];
 
@@ -60,14 +60,17 @@ export default function Section3Mobile() {
     <section className="w-full bg-white">
       <div className="mx-auto w-full max-w-[420px] px-6 py-10">
         <Reveal delay={0}>
-          <h2 className="text-center text-2xl font-semibold text-[#3073AF]">
-            What Corepliance does
+          <h2 className="text-center text-2xl font-semibold text-[#1867D4]">
+            Structured Intelligence for Insurance Supply Networks
           </h2>
         </Reveal>
 
         <Reveal delay={0.25}>
           <p className="mt-4 text-center text-lg font-normal text-[#7D6A6A]">
-            At beta stage, Corepliance supports:
+            At beta stage, Stratus provides a structured governance and
+            intelligence layer across insurer supplier relationships. It
+            introduces consistent performance alignment, shared visibility, and
+            measurable oversight without disrupting existing claims systems.
           </p>
         </Reveal>
 
@@ -84,7 +87,7 @@ export default function Section3Mobile() {
                   />
                 </div>
                 <div className="flex-1">
-                  <div className="text-lg font-semibold leading-6 text-[#3073AF]">
+                  <div className="text-lg font-semibold leading-6 text-[#1867D4]">
                     {feature.title}
                   </div>
                   <div className="mt-1 text-base font-medium leading-6 text-[#7D6A6A]">
@@ -96,7 +99,31 @@ export default function Section3Mobile() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.9}>
+        <Reveal delay={0.85}>
+          <div className="mt-10 space-y-6 text-center text-base font-normal leading-7 text-stone-600 font-[Inter]">
+            <div>
+              Stratus does not replace claims systems, route work, or automate
+              decisions.
+              <br />
+              It enhances structured oversight above existing operational
+              platforms.
+              <br />
+              <br />
+              The platform is designed for regulated environments, with
+              encrypted data storage, role-based access control, and
+              UK/EU-hosted infrastructure by default.
+            </div>
+            <div>
+              Oversight becomes measurable.
+              <br />
+              Performance becomes visible.
+              <br />
+              Governance becomes continuous.
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={1.1}>
           <div className="mt-10 flex justify-center">
             <button
               type="button"

@@ -1,113 +1,76 @@
 "use client";
 
-import Image from "next/image";
 import Reveal from "../motion/Reveal";
 
-type BulletItem = {
-  id: number;
-  text: string;
-  icon: string;
-  iconClass: string;
-  textClass: string;
-};
-
-const bulletItems: BulletItem[] = [
+const steps = [
   {
     id: 1,
-    text: "Use Corepliance on live matters",
-    icon: "/assets/live.svg",
-    iconClass: "absolute left-[397px] top-[387px] h-[44px] w-[44px]",
-    textClass: "absolute left-[473px] top-[396px] text-2xl font-normal text-white",
+    text: "The insurer defines the SLA framework and reporting expectations.",
   },
   {
     id: 2,
-    text: "Shape product development and workflows",
-    icon: "/assets/shape.svg",
-    iconClass: "absolute left-[398px] top-[445px] h-[44px] w-[44px]",
-    textClass: "absolute left-[473px] top-[459px] text-2xl font-normal text-white",
+    text: "The supplier uploads raw operational data on a defined cadence.",
   },
   {
     id: 3,
-    text: "Receive priority onboarding and support",
-    icon: "/assets/receive.svg",
-    iconClass: "absolute left-[398px] top-[508px] h-[44px] w-[44px]",
-    textClass: "absolute left-[472px] top-[522px] text-2xl font-normal text-white",
+    text: "Stratus maps and validates data against the agreed SLA parameters.",
   },
   {
     id: 4,
-    text: "Influence the future direction of the platform",
-    icon: "/assets/influence.svg",
-    iconClass: "absolute left-[398px] top-[571px] h-[44px] w-[44px]",
-    textClass: "absolute left-[473px] top-[585px] text-2xl font-normal text-white",
+    text: "Both parties review structured dashboards and act on early signals.",
   },
 ];
 
 export default function Section5() {
   return (
-    <section className="relative h-[827px] w-full overflow-hidden flex justify-center">
-      <Image
-        src="/assets/section-5-back.svg"
-        alt=""
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="relative z-10 h-full w-full">
-        <div className="relative h-full w-[1440px]">
-          <Reveal
-            delay={0}
-            viewportAmount={0.85}
-            viewportMargin="-300px 0px -300px 0px"
-          >
-            <div className="absolute left-[501px] top-[124px] text-4xl font-normal text-white">
-              Join the beta programme
-            </div>
-          </Reveal>
-          <Reveal
-            delay={0.55}
-            viewportAmount={0.85}
-            viewportMargin="-300px 0px -300px 0px"
-          >
-            <div className="absolute left-[259px] top-[244px] text-2xl font-normal text-white">
-              We are currently onboarding a small number of conveyancing firms
-              to participate
-              <br />
-              in our beta testing programme. Beta firms will:
-            </div>
-          </Reveal>
+    <section className="w-full bg-white">
+      <div className="mx-auto w-full max-w-[1100px] px-6 py-20 text-center">
+        <Reveal delay={0}>
+          <div className="text-4xl font-bold text-[#1867D4] font-[Inter]">
+            HOW STRATUS WORKS
+          </div>
+        </Reveal>
+        <Reveal delay={0.15}>
+          <div className="mt-4 text-2xl font-normal text-[#448CF0] font-[Inter]">
+            A Structured Oversight Workflow
+          </div>
+        </Reveal>
 
-          <Reveal
-            delay={1.15}
-            viewportAmount={0.85}
-            viewportMargin="-300px 0px -300px 0px"
-          >
-            <div>
-              {bulletItems.map((item) => (
-                <div key={item.id}>
-                  <div className={item.iconClass}>
-                    <Image
-                      src={item.icon}
-                      alt=""
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className={item.textClass}>{item.text}</div>
+        <Reveal delay={0.3}>
+          <div className="mx-auto mt-12 max-w-[760px] space-y-6 text-left text-xl font-normal leading-[50px] text-stone-600 font-[Inter]">
+            {steps.map((step) => (
+              <div key={step.id} className="flex items-start gap-6">
+                <div className="mt-[6px] flex h-7 w-7 shrink-0 items-center justify-center rounded-md border-2 border-[#1867D4] text-sm font-semibold text-[#1867D4]">
+                  {step.id}
                 </div>
-              ))}
-            </div>
-          </Reveal>
+                <div>{step.text}</div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
 
-          <Reveal
-            delay={1.75}
-            viewportAmount={0.85}
-            viewportMargin="-300px 0px -300px 0px"
+        <Reveal delay={0.45}>
+          <div className="mx-auto mt-12 max-w-[520px] text-center text-xl font-normal leading-8 text-stone-500 font-[Inter]">
+            No disruption to existing claims platforms.
+            <br />
+            No automated decisions.
+            <br />
+            No opaque scoring models.
+            <br />
+            <br />
+            Just structured oversight.
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.6}>
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("open-contact"))}
+            className="mt-10 inline-flex h-16 w-80 items-center justify-center rounded-full bg-[#1867D4] text-2xl font-medium text-white"
           >
-            <div className="absolute left-[443px] top-[668px] h-8 w-[539px] text-2xl font-normal text-white">
-              There is no long-term commitment to take part.
-            </div>
-          </Reveal>
-        </div>
+            Contact us
+          </button>
+        </Reveal>
       </div>
     </section>
   );

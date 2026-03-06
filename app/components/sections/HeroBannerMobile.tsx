@@ -5,10 +5,10 @@ import Reveal from "../motion/Reveal";
 
 export default function HeroBannerMobile() {
   return (
-    <section className="relative h-72 w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/banner-image.svg"
+          src="/assets/stratus-hero.svg"
           alt=""
           fill
           priority
@@ -26,58 +26,45 @@ export default function HeroBannerMobile() {
           priority
         />
       </div>
-      <Reveal
-        delay={0}
-        viewportMargin="0px 0px 0px 0px"
-        viewportAmount={0}
-        className="absolute left-[15px] top-[18px] z-20"
-      >
-        <Image
-          src="/assets/logo.svg"
-          alt="Corepliance logo"
-          width={57}
-          height={57}
-          className="rounded-[10px]"
-        />
-      </Reveal>
-      <Reveal
-        delay={0.4}
-        viewportMargin="0px 0px 0px 0px"
-        viewportAmount={0}
-        className="absolute left-1/2 top-[86px] z-20 w-80 -translate-x-1/2"
-      >
-        <div className="text-center text-xl font-semibold text-white">
-          The AML compliance platform for conveyancing lawyers
-        </div>
-      </Reveal>
-      <Reveal
-        delay={0.8}
-        className="absolute left-1/2 top-[142px] z-20 w-72 -translate-x-1/2"
-      >
-        <div className="text-center text-xl font-semibold text-white">
-          Now inviting solicitors to join our beta testing programme
-        </div>
-      </Reveal>
-      <Reveal
-        delay={1.2}
-        className="absolute left-1/2 top-[201px] z-20 w-44 -translate-x-1/2"
-      >
-        <div className="text-center text-xl font-semibold text-white">
-          Launching soon
-        </div>
-      </Reveal>
-      <Reveal
-        delay={1.6}
-        className="absolute left-1/2 top-[236px] z-20 w-72 -translate-x-1/2"
-      >
-        <button
-          type="button"
-          onClick={() => window.dispatchEvent(new Event("open-contact"))}
-          className="flex h-8 w-full items-center justify-center rounded-[20px] bg-[#5F66CA] text-lg font-medium text-white"
+      <div className="relative z-20 flex min-h-[420px] flex-col px-3 pb-6 pt-4 text-white">
+        <Reveal
+          delay={0}
+          viewportMargin="0px 0px 0px 0px"
+          viewportAmount={0}
+          className="self-start"
         >
-          Contact us to find out more
-        </button>
-      </Reveal>
+          <Image
+            src="/assets/stratus-logo.svg"
+            alt="Stratus logo"
+            width={140}
+            height={66}
+          />
+        </Reveal>
+        <Reveal
+          delay={0.4}
+          viewportMargin="0px 0px 0px 0px"
+          viewportAmount={0}
+          className="mt-6 text-center text-2xl font-semibold"
+        >
+          Shared Intelligence for
+          <br />
+          Insurance Supply Networks
+        </Reveal>
+        <div className="mt-6 text-center text-[22px] font-semibold leading-[34px]">
+          <Reveal delay={0.8}>Structured oversight</Reveal>
+          <Reveal delay={1.1}>Clear performance visibility</Reveal>
+          <Reveal delay={1.4}>Stronger supplier partnerships</Reveal>
+        </div>
+        <Reveal delay={1.7} className="mt-6 flex justify-center">
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("open-contact"))}
+            className="flex h-9 w-full max-w-[320px] items-center justify-center rounded-full bg-white text-lg font-medium text-[#1867D4]"
+          >
+            Get Early Access
+          </button>
+        </Reveal>
+      </div>
     </section>
   );
 }

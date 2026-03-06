@@ -13,7 +13,7 @@ export default function Footer() {
 
       <h3 className="text-base font-semibold text-slate-900">Who we are</h3>
       <p>
-        This website is operated by Corepliance Ltd. If you contact us through
+        This website is operated by Stratus Ltd. If you contact us through
         this website, we will handle your personal information responsibly and
         in line with UK data protection law.
       </p>
@@ -65,8 +65,8 @@ export default function Footer() {
       </p>
 
       <h3 className="text-base font-semibold text-slate-900">Contact us</h3>
-      <p>Email: Corepliance@Outlook.com</p>
-      <p>Address: 5 Church Street, Ystrad Mynach CF82 7EE</p>
+      <p>Email: Stratus@Outlook.com</p>
+      <p>Address: 57 Quarry Dale, Rumney, Cardiff, Wales, CF3 3BQ</p>
     </div>
   );
 
@@ -129,7 +129,7 @@ export default function Footer() {
 
       <h3 className="text-base font-semibold text-slate-900">Contact us</h3>
       <p>If you have any questions about our use of cookies, please contact us at:</p>
-      <p>Email: Corepliance@Outlook.com</p>
+      <p>Email: Stratus@Outlook.com</p>
     </div>
   );
 
@@ -141,24 +141,20 @@ export default function Footer() {
       : "";
 
   return (
-    <footer className="relative h-72 w-full overflow-hidden">
+    <footer className="relative h-72 w-full overflow-hidden bg-gradient-to-r from-[#3E6FA4] to-[#6FA8DC]">
       <Image
-        src="/assets/section-5-back.svg"
+        src="/assets/stratus-logo.svg"
         alt=""
-        fill
-        className="object-cover"
-        priority
-      />
-      <Image
-        src="/assets/logo.svg"
-        alt=""
-        width={160}
-        height={160}
-        className="absolute left-[59px] top-[32px] rounded-[50px]"
+        width={200}
+        height={94}
+        className="absolute left-[59px] top-[32px]"
       />
       <div className="absolute left-[59px] bottom-[32px] text-white text-sm leading-6">
-        <div>Copyright © 2026 – Corepliance Ltd. All rights reserved</div>
-        <div>Corepliance Ltd – Co Reg No: 16582909</div>
+        <div>
+          Copyright © 2026 – STRATUS SUPPLIER INTELLIGENCE LIMITED. All rights
+          reserved
+        </div>
+        <div>Company number 17004772</div>
       </div>
       <button
         type="button"

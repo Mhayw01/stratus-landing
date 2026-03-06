@@ -13,7 +13,7 @@ export default function FooterMobile() {
 
       <h3 className="text-base font-semibold text-slate-900">Who we are</h3>
       <p>
-        This website is operated by Corepliance Ltd. If you contact us through
+        This website is operated by Stratus Ltd. If you contact us through
         this website, we will handle your personal information responsibly and
         in line with UK data protection law.
       </p>
@@ -65,8 +65,8 @@ export default function FooterMobile() {
       </p>
 
       <h3 className="text-base font-semibold text-slate-900">Contact us</h3>
-      <p>Email: Corepliance@Outlook.com</p>
-      <p>Address: 5 Church Street, Ystrad Mynach CF82 7EE</p>
+      <p>Email: Stratus@Outlook.com</p>
+      <p>Address: 57 Quarry Dale, Rumney, Cardiff, Wales, CF3 3BQ</p>
     </div>
   );
 
@@ -129,7 +129,7 @@ export default function FooterMobile() {
 
       <h3 className="text-base font-semibold text-slate-900">Contact us</h3>
       <p>If you have any questions about our use of cookies, please contact us at:</p>
-      <p>Email: Corepliance@Outlook.com</p>
+      <p>Email: Stratus@Outlook.com</p>
     </div>
   );
 
@@ -141,23 +141,13 @@ export default function FooterMobile() {
       : "";
 
   return (
-    <footer className="relative h-36 w-full overflow-hidden">
-      <div className="absolute inset-0 z-0 bg-gradient-to-l from-blue-500 to-cyan-700" />
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/assets/section-5-back.svg"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+    <footer className="relative h-36 w-full overflow-hidden bg-gradient-to-r from-[#3E6FA4] to-[#6FA8DC]">
       <Image
-        src="/assets/logo.svg"
+        src="/assets/stratus-logo.svg"
         alt=""
-        width={56}
+        width={120}
         height={56}
-        className="absolute left-[15px] top-[12px] z-10 h-14 w-14 rounded-[20px]"
+        className="absolute left-[15px] top-[12px] z-10"
       />
       <button
         type="button"
@@ -174,10 +164,11 @@ export default function FooterMobile() {
         Cookie Policy
       </button>
       <div className="absolute left-1/2 top-[92px] z-10 w-full -translate-x-1/2 text-center text-sm text-white">
-        Copyright © 2026 – Corepliance Ltd. All rights reserved
+        Copyright © 2026 – STRATUS SUPPLIER INTELLIGENCE LIMITED. All rights
+        reserved
       </div>
       <div className="absolute left-1/2 top-[118px] z-10 w-full -translate-x-1/2 text-center text-sm text-white">
-        Corepliance Ltd – Co Reg No: 16582909
+        Company number 17004772
       </div>
       <PolicyModal
         isOpen={policyOpen !== null}

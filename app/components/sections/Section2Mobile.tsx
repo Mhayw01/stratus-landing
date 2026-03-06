@@ -9,7 +9,7 @@ export default function Section2Mobile() {
       <Reveal delay={0}>
         <div className="relative w-full aspect-square">
           <Image
-            src="/assets/section-2-1.svg"
+            src="/assets/new-section2-1.svg"
             alt=""
             fill
             sizes="100vw"
@@ -21,28 +21,40 @@ export default function Section2Mobile() {
 
       <div className="mx-auto max-w-[420px] space-y-10 px-4 py-10">
         <Reveal delay={0.25}>
-          <h2 className="text-center text-2xl font-semibold text-[#3073AF]">
-            AML Compliance shouldn’t take up all of a lawyer’s time
-          </h2>
+          <div className="text-center text-2xl font-bold text-[#1867D4] font-[Inter]">
+            Modern Insurance Supply Networks
+            <br />
+            Require Structured Intelligence
+          </div>
         </Reveal>
 
-        <Reveal delay={0.55}>
-          <div className="space-y-4 text-base font-medium leading-7 text-[#7D6A6A]">
-            <p>AML compliance shouldn’t consume your fee-earning time.</p>
+        <Reveal delay={0.45}>
+          <div className="text-lg font-semibold text-[#1867D4] font-[Inter]">
+            Oversight Has Become a Strategic Risk Function
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.65}>
+          <div className="text-base font-normal leading-7 text-stone-500 font-[Inter]">
             <p>
-              Every conveyancing matter requires a fully reasoned Client &amp;
-              Matter Risk Assessment and yet for many law firms Risk Assessments now absorb hours per file,
-              delay progress, frustrate clients, and expose firms to regulatory
-              risk.
+              Insurance supply chains are no longer operational back-office
+              functions. They are commercially critical, regulator-visible
+              networks delivering customer outcomes at scale.
             </p>
-            <p>
-              Corepliance is a new AML compliance platform designed to change
-              that.
+            <p className="mt-4">
+              Under Consumer Duty and increased customer expectations, insurers
+              must demonstrate continuous oversight, not periodic review.
+              Executive leadership teams are increasingly accountable for
+              supply chain performance, customer treatment, and cost control
+              across third-party providers.
             </p>
-            <p>
-              We help conveyancing lawyers complete consistent, regulator-ready
-              Client &amp; Matter Risk Assessments in minutes rather than
-              hours, without removing professional judgment or control.
+            <p className="mt-4">
+              At the same time, claims inflation, operational volatility, and
+              rising service expectations demand tighter performance visibility
+              without damaging supplier relationships.
+            </p>
+            <p className="mt-4">
+              Insurers must maintain control without compromising delivery.
             </p>
           </div>
         </Reveal>
@@ -51,7 +63,7 @@ export default function Section2Mobile() {
       <Reveal delay={0.95}>
         <div className="relative w-full aspect-square">
           <Image
-            src="/assets/section-2-2.svg"
+            src="/assets/new-section2-2.svg"
             alt=""
             fill
             sizes="100vw"
@@ -64,7 +76,7 @@ export default function Section2Mobile() {
         <div className="absolute inset-0 z-0 bg-gradient-to-l from-blue-500 to-cyan-700" />
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/section-5-back.svg"
+            src="/assets/new-filter.svg"
             alt=""
             fill
             sizes="100vw"
@@ -75,34 +87,36 @@ export default function Section2Mobile() {
         <div className="relative z-10 mx-auto max-w-[420px] space-y-6 px-4">
           <Reveal delay={1.2}>
             <h2 className="text-2xl font-semibold text-white">
-              Built by lawyers, for lawyers
+              Performance expectations are rising across networks
             </h2>
           </Reveal>
           <Reveal delay={1.5}>
             <div className="space-y-4 text-lg font-normal leading-7 text-white">
               <p>
-                Corepliance has been designed by an experienced conveyancing
-                solicitor and former MLRO who understands the realities of
-                modern AML compliance.
-                <br />
-                Rather than replacing legal decision-making, Corepliance acts as
-                a compliance co-pilot:
+                Suppliers operate in an environment of increasing complexity
+                and accountability. They serve multiple insurer networks, each
+                with evolving governance expectations and performance
+                standards.
               </p>
               <p>
-                Analysing AML documentation – including ID and Source of Funds
-                evidence
-                <br />
-                Highlighting inconsistencies and gaps
-                <br />
-                Drafting evidence-grounded Risk Assessment narratives capable of
-                being quickly checked &amp; evidenced by fee earners
-                <br />
-                Leaving final review, edits and sign-off entirely with the
-                lawyer
+                Regulatory visibility, heightened customer sensitivity, and
+                cost pressure mean service delivery is no longer judged solely
+                on throughput but on transparency, consistency, and
+                demonstrable control.
               </p>
               <p>
-                The result is faster onboarding, clearer audit trails and a
-                consistent approach across every matter.
+                Suppliers must meet rising compliance and reporting
+                expectations while maintaining operational efficiency and
+                commercial competitiveness across diverse insurer
+                relationships.
+              </p>
+              <p>
+                Oversight is continuous. Expectations are dynamic. Visibility
+                is now essential.
+              </p>
+              <p>
+                Stratus exists to give suppliers control, transforming
+                performance visibility into commercial strength.
               </p>
             </div>
           </Reveal>

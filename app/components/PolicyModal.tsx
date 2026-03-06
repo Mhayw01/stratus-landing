@@ -43,11 +43,11 @@ export default function PolicyModal({
         onClick={(event) => event.stopPropagation()}
       >
         <Image
-          src="/assets/logo.svg"
-          alt="Corepliance"
-          width={120}
-          height={120}
-          className="mb-6 rounded-[40px]"
+          src="/assets/stratus-logo.svg"
+          alt="Stratus"
+          width={200}
+          height={94}
+          className="mb-6"
         />
         <button
           type="button"
