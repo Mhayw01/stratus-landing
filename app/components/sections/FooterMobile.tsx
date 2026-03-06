@@ -141,34 +141,40 @@ export default function FooterMobile() {
       : "";
 
   return (
-    <footer className="relative h-36 w-full overflow-hidden bg-gradient-to-r from-[#3E6FA4] to-[#6FA8DC]">
-      <Image
-        src="/assets/stratus-logo.svg"
-        alt=""
-        width={120}
-        height={56}
-        className="absolute left-[15px] top-[12px] z-10"
-      />
-      <button
-        type="button"
-        onClick={() => setPolicyOpen("privacy")}
-        className="absolute right-[24px] top-[21px] z-10 text-sm text-white hover:underline"
-      >
-        Privacy Policy
-      </button>
-      <button
-        type="button"
-        onClick={() => setPolicyOpen("cookie")}
-        className="absolute right-[24px] top-[42px] z-10 text-sm text-white hover:underline"
-      >
-        Cookie Policy
-      </button>
-      <div className="absolute left-1/2 top-[92px] z-10 w-full -translate-x-1/2 text-center text-sm text-white">
-        Copyright © 2026 – STRATUS SUPPLIER INTELLIGENCE LIMITED. All rights
-        reserved
-      </div>
-      <div className="absolute left-1/2 top-[118px] z-10 w-full -translate-x-1/2 text-center text-sm text-white">
-        Company number 17004772
+    <footer className="relative w-full overflow-hidden bg-gradient-to-r from-[#3E6FA4] to-[#6FA8DC]">
+      <div className="mx-auto w-full max-w-[420px] px-4 py-4 text-white">
+        <div className="flex items-start justify-between gap-4">
+          <Image
+            src="/assets/stratus-logo.svg"
+            alt=""
+            width={120}
+            height={56}
+            className="shrink-0"
+          />
+          <div className="flex flex-col items-end gap-1 text-sm">
+            <button
+              type="button"
+              onClick={() => setPolicyOpen("privacy")}
+              className="hover:underline"
+            >
+              Privacy Policy
+            </button>
+            <button
+              type="button"
+              onClick={() => setPolicyOpen("cookie")}
+              className="hover:underline"
+            >
+              Cookie Policy
+            </button>
+          </div>
+        </div>
+        <div className="mt-3 text-center text-xs leading-5">
+          Copyright © 2026 – STRATUS SUPPLIER INTELLIGENCE LIMITED. All rights
+          reserved
+        </div>
+        <div className="text-center text-xs leading-5">
+          Company number 17004772
+        </div>
       </div>
       <PolicyModal
         isOpen={policyOpen !== null}
