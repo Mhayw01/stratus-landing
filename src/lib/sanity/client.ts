@@ -1,5 +1,5 @@
 import { createClient } from "@sanity/client";
-import imageUrlBuilder from "@sanity/image-url";
+import { createImageUrlBuilder } from "@sanity/image-url";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "your-project-id"; // TODO: replace with your Sanity projectId
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
@@ -12,7 +12,7 @@ export const sanityClient = createClient({
   useCdn: true,
 });
 
-const builder = imageUrlBuilder(sanityClient);
+const builder = createImageUrlBuilder(sanityClient);
 
 export const urlFor = (source: unknown) => {
   if (!source) {
