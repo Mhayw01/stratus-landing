@@ -11,7 +11,7 @@ export default function Section2() {
           <Reveal className="h-full w-full" delay={0}>
             <div className="relative h-full w-full">
               <Image
-                src="/assets/new-section2-1.svg"
+                src="/assets/new-hero-1.png"
                 alt="AML compliance workflow illustration"
                 fill
                 sizes="50vw"

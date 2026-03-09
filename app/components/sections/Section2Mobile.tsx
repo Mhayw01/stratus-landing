@@ -9,7 +9,7 @@ export default function Section2Mobile() {
       <Reveal delay={0}>
         <div className="relative w-full aspect-square">
           <Image
-            src="/assets/new-section2-1.svg"
+            src="/assets/new-hero-1.png"
             alt=""
             fill
             sizes="100vw"
