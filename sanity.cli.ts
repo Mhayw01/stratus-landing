@@ -1,12 +1,14 @@
 import { defineCliConfig } from "sanity/cli";
 
-const projectId =
-  process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "your-project-id"; // TODO: replace with your Sanity projectId
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
+const projectId = "8ky6sdci";
+const dataset = "production";
 
 export default defineCliConfig({
   api: {
     projectId,
     dataset,
+  },
+  deployment: {
+    appId: "r734q1hu6mvox9qtopbtaw2e",
   },
 });
