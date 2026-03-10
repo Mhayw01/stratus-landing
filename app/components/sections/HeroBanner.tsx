@@ -57,15 +57,18 @@ export default function HeroBanner() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...baseTransition, delay: 0.5 }}
               >
-                Shared Intelligence for
+                Manage your insurance
                 <br />
-                Insurance Supply Networks
+                supply chain performance
+                <br />
+                in one platform
               </motion.h1>
-              <div className="text-[32px] font-semibold leading-[3.6rem]">
+              <div className="text-[24px] font-medium leading-[2.6rem]">
                 {[
-                  "Structured oversight",
-                  "Clear performance visibility",
-                  "Stronger supplier partnerships",
+                  "Stratus helps insurers and suppliers",
+                  "monitor performance, manage governance,",
+                  "streamline onboarding, to gain real-time",
+                  "operational insight across their supply chain",
                 ].map((line, index) => (
                   <motion.span
                     key={line}

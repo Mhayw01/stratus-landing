@@ -46,16 +46,19 @@ export default function HeroBannerMobile() {
           viewportAmount={0}
           className="mt-6 text-center text-2xl font-semibold"
         >
-          Shared Intelligence for
+          Manage your insurance
           <br />
-          Insurance Supply Networks
+          supply chain performance
+          <br />
+          in one platform
         </Reveal>
-        <div className="mt-6 text-center text-[22px] font-semibold leading-[34px]">
-          <Reveal delay={0.8}>Structured oversight</Reveal>
-          <Reveal delay={1.1}>Clear performance visibility</Reveal>
-          <Reveal delay={1.4}>Stronger supplier partnerships</Reveal>
+        <div className="mt-6 text-center text-2xl font-medium leading-[34px]">
+          <Reveal delay={0.8}>Stratus helps insurers and suppliers</Reveal>
+          <Reveal delay={1.1}>monitor performance, manage governance,</Reveal>
+          <Reveal delay={1.4}>streamline onboarding, to gain real-time</Reveal>
+          <Reveal delay={1.7}>operational insight across their supply chain</Reveal>
         </div>
-        <Reveal delay={1.7} className="mt-6 flex justify-center">
+        <Reveal delay={2.0} className="mt-6 flex justify-center">
           <button
             type="button"
             onClick={() => window.dispatchEvent(new Event("open-contact"))}

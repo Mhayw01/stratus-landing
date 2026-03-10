@@ -42,11 +42,6 @@ export default function Section6Mobile() {
             ))}
           </ul>
         </Reveal>
-        <Reveal delay={0.75}>
-          <div className="mt-5 text-base font-normal font-[Inter]">
-            Participation is limited to selected insurers and suppliers
-          </div>
-        </Reveal>
         <Reveal delay={0.9}>
           <button
             type="button"
