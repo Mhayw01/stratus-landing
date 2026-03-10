@@ -19,6 +19,10 @@ const steps = [
     id: 4,
     text: "Both parties review structured dashboards and act on early signals.",
   },
+  {
+    id: 5,
+    text: "Stratus AI interprets the data to reveal patterns, highlight emerging risks, and generate deeper insight into supplier performance.",
+  },
 ];
 
 export default function Section5() {
