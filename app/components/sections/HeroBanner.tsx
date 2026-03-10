@@ -50,7 +50,7 @@ export default function HeroBanner() {
         </motion.div>
         <div className="flex min-h-[82vh] items-start">
           <div className="flex w-full items-start justify-between px-[72px] pt-[270px] font-[Inter]">
-            <div className="flex max-w-[560px] flex-col gap-12 text-white">
+            <div className="flex max-w-[560px] flex-col gap-8 text-white">
               <motion.h1
                 className="text-4xl font-semibold"
                 initial={{ opacity: 0, y: resolvedY }}
@@ -82,7 +82,7 @@ export default function HeroBanner() {
                 ))}
               </div>
             </div>
-            <div className="flex self-end mt-12">
+            <div className="flex self-end mt-6">
               <motion.button
                 type="button"
                 onClick={() => window.dispatchEvent(new Event("open-contact"))}
