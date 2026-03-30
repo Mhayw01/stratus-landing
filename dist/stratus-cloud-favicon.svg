@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="20" y1="72" x2="108" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#55C7F7"/>
+      <stop offset="100%" stop-color="#2F6FF6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- cloud outline -->
+  <path d="M35 84
+           C28 84 22 78 22 70
+           C22 61 29 54 38 54
+           C40 54 42 54 44 55
+           C46 42 57 34 70 34
+           C84 34 95 44 96 58
+           C98 57 100 57 102 57
+           C113 57 122 66 122 77
+           C122 88 113 97 102 97
+           L90 97
+           C88 100 86 103 83 105
+           L77 110"
+        fill="none"
+        stroke="url(#g)"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#soft)"/>
+
+  <!-- inner line -->
+  <path d="M48 77 L96 77" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M56 77 L72 63" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- nodes -->
+  <circle cx="42" cy="77" r="6.3" fill="url(#g)"/>
+  <circle cx="74" cy="63" r="6.3" fill="url(#g)"/>
+  <circle cx="98" cy="77" r="6.3" fill="url(#g)"/>
+  <circle cx="72" cy="91" r="6.3" fill="url(#g)"/>
+</svg>
